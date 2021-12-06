@@ -78,6 +78,24 @@ $(document).ready(function(){
     $(".trv_wrap .more_view").css("display","flex");
     $(".travel .trv_more").hide();
   });
+
+
+  // section.recommend
+  var swiper2 = new Swiper(".mySwiper_re", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      // when window width is >= 1024px
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      },
+    }
+  });
   
   
 }); // 끝
