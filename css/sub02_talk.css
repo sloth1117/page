@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+/* mobile 360px */
+.talk .cateset{padding: 0 20px;}
+.talk .cateset li{
+display: inline-block;
+border: 0;
+padding: 0;
+}
+.talk .cateset li::after{
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #ccc;
+  margin-left: 5px;
+}
+.talk .cateset li:last-child:after{display: none;}
+.talk .cateset li a{
+  display: inline-block;
+  padding: 7px 5px;
+  color: #999;
+  font-size: 1.3rem;
+}
+.talk .cateset li a:hover{color: #f1485b;}
+
+.talk ul.t_board{border-top: 1px solid #ccc;}
+.talk .paging{
+  text-align: center;
+  margin-top: 20px;
+}
+.talk .paging li{
+  border: 0;
+  padding: 0;
+  display: inline-block;
+}
+.talk .paging li a{padding: 5px;}
+.talk .paging li a.p_arr_prev{color: #999;}
+.talk .paging li a.p_arr_next{color: #333;}
+
+.talk .paging li.p_on a{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.post_title{
+  border-bottom: 1px solid #7fa7b8;
+  padding: 15px 20px;
+  line-height: 1.5;
+}
+.post_title .category{
+  font-size: 1.3rem;
+  color: #7fa7b8;
+}
+.post_title p.title{
+  font-size: 1.8rem;
+  color: #222;
+  font-weight: 400;
+}
+.post_title .post_writer{
+  color: #555;
+  font-weight: 400;
+}
+.post_title .post_writer::after{
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #999;
+  margin-left: 5px;
+}
+.post_title span.time{
+  font-size: 1.3rem;
+  color: #777;
+}
+.post .posting{
+  padding: 20px;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.post_reply{border-top: 1px solid #ccc;}
+.post_reply li strong{
+  font-weight: 400;
+  color: #7fa7b8;
+}
+.reply_write{padding: 5px 20px; text-align: center;}
+.reply_write label{display: none;}
+.reply_write textarea{
+  width: 100%;
+  height: 80px;
+  /* resize: none; */
+}
+.reply_write .btn_reply{
+  width: 200px;
+  height: 30px;
+  background-color: #7fa7b8;
+  color: #fff;
+  margin-top: 5px;
+  border: 1px solid transparent;
+}
+.reply_write .btn_reply:hover{
+  border-color: #7fa7b8;
+  background-color: #fff;
+  color: #7fa7b8;
+}
+.post_list{padding: 7px 20px;}
+.post_list p{padding: 3px 0;}
+.post_list p:hover a{text-decoration: underline;}
+.post_list p span{
+  display: inline-block;
+  margin-right: 15px;
+  color: #777;
+}
+.post .go_list{
+  display: block;
+  width: 80px;
+  background-color: #7fa7b8;
+  padding: 10px;
+  margin: 10px auto 0;
+  color: #fff;
+  border: 1px solid transparent;
+  text-align: center;
+}
+.post .go_list:hover{
+  border-color: #7fa7b8;
+  background-color: #fff;
+  color: #7fa7b8;
+}
+
+.t_sch_box{
+  text-align: center; 
+  width: 240px;
+  margin: 30px auto 50px;
+  border-bottom: 1px solid #7fa7b8;
+}
+.t_sch_box label{display: none;}
+.t_sch_box input{
+  width: 200px;
+  height: 25px;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+}
+.t_sch_box .sch_btn{
+  width: 25px;
+  height: 25px;
+  background: url(../img/icon_sch.png) no-repeat right center / 20px auto;
+}
+
+/* tablet 1024px ======================================================= */
+@media (min-width:1024px){
+  .post .go_list{
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .t_sch_box{width: 350px;}
+  .t_sch_box input{
+    width: 300px;
+    height: 35px;
+    font-size: 1.8rem;
+  }
+  .t_sch_box .sch_btn{
+    width: 30px;
+    height: 30px;
+    background-size: 25px auto;
+  }
+
+}
+
+/* desktop 1280px ======================================================= */
+@media (min-width:1280px){
+  .t_sch_box{
+    width: 350px;
+  }
+  .t_sch_box input{
+    width: 300px;
+    height: 35px;
+    font-size: 1.8rem;
+  }
+  .t_sch_box .sch_btn{
+    width: 30px;
+    height: 30px;
+    background-size: 25px auto;
+  }
+}
+

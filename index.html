@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page - 여행의 시작과 끝</title>
+  <link href="css/import.css" rel="stylesheet">
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id="wrap">
+    <form action="" method="">
+      <header>
+        <div class="inner">
+          <h1><a href="index.html" class="hidden">PAGE</a></h1>
+          <div class="btnBox">
+            <button type="button" class="btn_open hidden">메뉴열기</button>
+            <button type="button" class="btn_close hidden">메뉴닫기</button>
+            <button type="button" class="btn_login hidden">로그인</button>
+          </div><!--.btnBox-->
+          <div class="navbg"></div>
+          <nav>
+            <h2>메인 네비게이션</h2>
+            <ul class="mainMenu">
+              <li>
+                <h3><a href="sub_travel.html">여행기</a></h3>
+                <ul class="subMenu">
+                  <li><a href="#">추천 여행기</a></li>
+                  <li><a href="#">후기</a></li>
+                  <li><a href="#">일정표</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="#">둘러보기</a></h3>
+              </li>
+              <li>
+                <h3><a href="sub_mypage.html">MY PAGE</a></h3>
+                <ul class="subMenu">
+                  <li><a href="#">내 여행모음</a></li>
+                  <li><a href="#">일정표 관리</a></li>
+                  <li><a href="#">책갈피 목록</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="#">광장</a></h3>
+                <ul class="subMenu">
+                  <li><a href="sub_talk.html">Talk</a></li>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">Event</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div><!--.inner-->
+      </header>
+
+      <div id="container">
+        <section class="week">
+          <div class="inner">
+            <h4><a href="sub_travel.html">11월 첫째 주 추천 여행기</a></h4>
+            <div class="week_wrap clear">
+              <div class="week_big">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="img/week_big.jpg" alt="게시글 대표이미지">
+                  </div><!--.img_box-->
+                  <div class="txt_box">
+                    <h5><a href="#">방콕에서 왕궁 구경하기</a></h5>
+                    <span class="name"><a href="sub_mypage.html">밤밤</a></span>
+                    <ul>
+                      <li><a href="#">태국</a></li>
+                      <li><a href="#">방콕</a></li>
+                      <li><a href="#">왕궁</a></li>
+                      <li><a href="#">타이</a></li>
+                      <li><a href="#">관광</a></li>
+                    </ul>
+                  </div><!--.txt_box-->
+                </a>
+              </div><!--.week_big-->
+              <div class="week_small">
+                <div class="week_s1 clear">
+                  <div class="txt_box">
+                    <h5><a href="#">오늘은 걸어서 2</a></h5>
+                    <span class="name"><a href="#">마리</a></span>
+                    <ul>
+                      <li><a href="#">스페인</a></li>
+                      <li><a href="#">마드리드</a></li>
+                      <li><a href="#">혼여행</a></li>
+                    </ul>
+                  </div><!--.txt_box-->
+                  <div class="img_box">
+                    <a href="#"><img src="img/week_small01.jpg" alt="게시글 대표이미지"></a>
+                  </div><!--.img_box-->
+                </div><!--.week_s1-->
+                <div class="week_s2 clear">
+                  <div class="txt_box">
+                    <h5><a href="#">산토리니의 아침</a></h5>
+                    <span class="name"><a href="#">토성</a></span>
+                    <ul>
+                      <li><a href="#">그리스</a></li>
+                      <li><a href="#">산토리니</a></li>
+                      <li><a href="#">바다</a></li>
+                    </ul>
+                  </div><!--.txt_box-->
+                  <div class="img_box">
+                    <a href="#"><img src="img/week_small02.jpg" alt="게시글 대표이미지"></a>
+                  </div><!--.img_box-->
+                </div><!--.week_s2-->
+                <div class="week_s3 clear">
+                  <div class="txt_box">
+                    <h5><a href="#">오늘은 걸어서 3</a></h5>
+                    <span class="name"><a href="#">마리</a></span>
+                    <ul>
+                      <li><a href="#">스페인</a></li>
+                      <li><a href="#">마드리드</a></li>
+                      <li><a href="#">혼여행</a></li>
+                    </ul>
+                  </div><!--.txt_box-->
+                  <div class="img_box">
+                    <a href="#"><img src="img/week_small03.jpg" alt="게시글 대표이미지"></a>
+                  </div><!--.img_box-->
+                </div><!--.week_s3-->
+              </div><!--.week_small-->
+            </div><!--.week_wrap-->
+          </div><!--.inner-->
+        </section><!--.week-->
+
+        <section class="search">
+          <div class="inner">
+            <h4>여행기 찾기</h4>
+            <div class="s_box">
+              <ul>
+                <li>
+                  <select name="country">
+                    <option value="c_all">전체</option>
+                    <option value="internal" selected>국내</option>
+                    <option value="overseas">해외</option>
+                  </select>
+                  <span>로</span>
+                </li>
+                <li>
+                  <select name="day">
+                    <option value="d_all">전체</option>
+                    <option value="d1">1일</option>
+                    <option value="d2">2일</option>
+                    <option value="d3" selected>3일</option>
+                    <option value="d4">4일</option>
+                    <option value="d5">5일</option>
+                    <option value="d6">6일</option>
+                    <option value="d7">7일</option>
+                    <option value="d8">8일</option>
+                    <option value="d9">9일</option>
+                    <option value="d10">10일 이상</option>
+                  </select>
+                  <span>동안</span>
+                </li>
+                <li>
+                  <select name="with">
+                    <option value="w_all">전체</option>
+                    <option value="alone" selected>혼자</option>
+                    <option value="family">가족</option>
+                    <option value="friend">친구</option>
+                    <option value="couple">애인</option>
+                  </select>
+                </li>
+              </ul>
+              <button type="button" class="btn_sch hidden">검색</button>
+            </div><!--.s_box-->
+          </div><!--.inner-->
+        </section><!--.search-->
+
+        <section class="keyword">
+          <div class="inner">
+            <h4>Page keyword</h4>
+            <div class="k_wrap">
+              <ul class="clear">
+                <li><a href="#">항공</a></li>
+                <li><a href="#">호텔</a></li>
+                <li><a href="#">리조트</a></li>
+                <li><a href="#">버스</a></li>
+                <li><a href="#">지하철</a></li>
+                <li><a href="#">기차</a></li>
+                <li><a href="#">배</a></li>
+                <li><a href="#">택시</a></li>
+                <li><a href="#">대만</a></li>
+                <li><a href="#">영국</a></li>
+                <li><a href="#">홍콩</a></li>
+                <li><a href="#" class="k_sch">키워드 찾기</a></li>
+                <li><a href="#">프랑스</a></li>
+                <li><a href="#">일본</a></li>
+                <li><a href="#">중국</a></li>
+                <li><a href="#">미국</a></li>
+                <li><a href="#">베트남</a></li>
+                <li><a href="#">카페</a></li>
+                <li><a href="#">식당</a></li>
+                <li><a href="#">기념품</a></li>
+                <li><a href="#">관광</a></li>
+                <li><a href="#">공항</a></li>
+                <li><a href="#">투어</a></li>
+              </ul>
+            </div><!--.k_wrap-->
+          </div><!--.inner-->
+        </section><!--.keyword-->
+
+        <section class="review">
+          <div class="inner">
+            <h4><a href="#">방금 올라온 후기</a></h4>
+            <div class="r_box_wrap">
+              <!-- Swiper -->
+              <div class="swiper mySwiper_rv">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide rvList">
+                    <a href="#">
+                      <div class="img_box">
+                        <img src="img/review01.jpg" alt="리뷰이미지">
+                      </div><!--.img_box-->
+                      <div class="txt_box">
+                        <strong>AA호텔 조식</strong>
+                        <span>방콕</span>
+                      </div><!--.txt_box-->
+                    </a>
+                  </div>
+                  <div class="swiper-slide rvList">
+                    <a href="#">
+                      <div class="img_box">
+                        <img src="img/review02.jpg" alt="리뷰이미지">
+                      </div><!--.img_box-->
+                      <div class="txt_box">
+                        <strong>Sea 조개구이</strong>
+                        <span>서울</span>
+                      </div><!--.txt_box-->
+                    </a>
+                  </div>
+                  <div class="swiper-slide rvList">
+                    <a href="#">
+                      <div class="img_box">
+                        <img src="img/review03.jpg" alt="리뷰이미지">
+                      </div><!--.img_box-->
+                      <div class="txt_box">
+                        <strong>원 우육면</strong>
+                        <span>가오슝</span>
+                      </div><!--.txt_box-->
+                    </a>
+                  </div>
+                  <div class="swiper-slide rvList">
+                    <a href="#">
+                      <div class="img_box">
+                        <img src="img/review04.jpg" alt="리뷰이미지">
+                      </div><!--.img_box-->
+                      <div class="txt_box">
+                        <strong>카페 gram</strong>
+                        <span>후쿠오카</span>
+                      </div><!--.txt_box-->
+                    </a>
+                  </div>
+                  <div class="swiper-slide rvList">
+                    <a href="#">
+                      <div class="img_box">
+                        <img src="img/review05.jpg" alt="리뷰이미지">
+                      </div><!--.img_box-->
+                      <div class="txt_box">
+                        <strong>갈비우동</strong>
+                        <span>후쿠오카</span>
+                      </div><!--.txt_box-->
+                    </a>
+                  </div>
+                  <div class="swiper-slide rvList">
+                    <a href="#">
+                      <div class="img_box">
+                        <img src="img/review06.jpg" alt="리뷰이미지">
+                      </div><!--.img_box-->
+                      <div class="txt_box">
+                        <strong>흑당버블티</strong>
+                        <span>타이베이</span>
+                      </div><!--.txt_box-->
+                    </a>
+                  </div>
+                  <div class="swiper-slide rvList">
+                    <a href="#">
+                      <div class="img_box">
+                        <img src="img/review07.jpg" alt="리뷰이미지">
+                      </div><!--.img_box-->
+                      <div class="txt_box">
+                        <strong>화덕피자</strong>
+                        <span>부산</span>
+                      </div><!--.txt_box-->
+                    </a>
+                  </div>
+                  <div class="swiper-slide rvList">
+                    <a href="#">
+                      <div class="img_box">
+                        <img src="img/review08.jpg" alt="리뷰이미지">
+                      </div><!--.img_box-->
+                      <div class="txt_box">
+                        <strong>리코타치즈 수플레 팬케이크</strong>
+                        <span>서울 마포구</span>
+                      </div><!--.txt_box-->
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div><!--.r_box_wrap-->
+          </div><!--.inner-->
+        </section><!--.review-->
+
+        <section class="travel">
+          <div class="inner">
+            <h4><a href="sub_travel.html">새로 생성된 여행</a></h4>
+            <div class="trv_wrap">
+              <div class="trv_box t01">
+                <div class="img_box">
+                  <a href="#"><img src="img/new01.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">호그와트를 가다</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>오사카</li>
+                    <li>3명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s01.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">애플</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t01-->
+              <div class="trv_box t02">
+                <div class="img_box">
+                  <a href="#"><img src="img/new02.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">가을 단풍구경</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>지리산</li>
+                    <li>4명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s02.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">트리체</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t02-->
+              <div class="trv_box t03">
+                <div class="img_box">
+                  <a href="#"><img src="img/new03.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">밤하늘</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>부산</li>
+                    <li>2명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s03.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">cookie</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t03-->
+              <div class="trv_box t04">
+                <div class="img_box">
+                  <a href="#"><img src="img/new04.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">맛집투어 - 후쿠오카편</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>후쿠오카</li>
+                    <li>1명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s04.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">도로록</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t04-->
+              <div class="trv_box t05">
+                <div class="img_box">
+                  <a href="#"><img src="img/new05.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">보얼예술특구</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>가오슝</li>
+                    <li>2명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s05.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">황정식</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t05-->
+              <div class="trv_box t06">
+                <div class="img_box">
+                  <a href="#"><img src="img/new06.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">모르는 길 걷기</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>오사카</li>
+                    <li>1명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s06.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">펭하</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t06-->
+              <div class="trv_box t07 more_view">
+                <div class="img_box">
+                  <a href="#"><img src="img/new07.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">인생의 회전목마</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>아시아티크</li>
+                    <li>2명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s07.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">마루</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t07-->
+              <div class="trv_box t08 more_view">
+                <div class="img_box">
+                  <a href="#"><img src="img/new08.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">치진섬에서 전동자전거 타고 돌아다니기</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>가오슝</li>
+                    <li>6명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s08.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">우비소년</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t08-->
+              <div class="trv_box t09 more_view">
+                <div class="img_box">
+                  <a href="#"><img src="img/new09.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">프랑프랑</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>후쿠오카</li>
+                    <li>3명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s09.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">달빛</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t09-->
+              <div class="trv_box t10 more_view">
+                <div class="img_box">
+                  <a href="#"><img src="img/new10.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">안평수옥</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>안평</li>
+                    <li>4명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s10.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">조개먹는해달</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t10-->
+              <div class="trv_box t11 more_view">
+                <div class="img_box">
+                  <a href="#"><img src="img/new11.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">이상한 나라의 앨리스</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>텐진</li>
+                    <li>1명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s11.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">고양이</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t11-->
+              <div class="trv_box t12 more_view">
+                <div class="img_box">
+                  <a href="#"><img src="img/new12.jpg" alt="게시물 커버이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <h5><a href="#" class="title">옛날백화점</a></h5>
+                  <ul class="trv_info">
+                    <li>21.11.17 ~ 21.11.20</li>
+                    <li>타이난</li>
+                    <li>2명</li>
+                  </ul>
+                  <div class="trv_pf">
+                    <div class="img_box"><img src="img/pf_s12.jpg" alt="작은 프로필이미지"></div>
+                    <a href="#" class="user_name">당근</a>
+                  </div><!--.trv_pf-->
+                </div><!--.txt_box-->
+              </div><!--.trv_box t12-->
+           </div><!--.trv_wrap-->
+           <a href="#" class="trv_more hidden">더보기</a>
+          </div><!--.inner-->
+        </section><!--.travel-->
+
+        <section class="talk">
+          <div class="inner">
+            <h4><a href="sub_talk.html">TALK</a></h4>
+            <ul>
+              <li>
+                <a href="sub_talk_1.html">
+                  <span class="category">실시간 정보</span>
+                  <span class="title">ABC공항 14:40 인천행 DE항공 출발 지연됨 못 뜰수도 있다네요ㄷㄷ</span>
+                  <span class="reply">3</span>
+                </a>
+                <p class="time">13:30</p>
+              </li>
+              <li>
+                <a href="sub_talk_2.html">
+                  <span class="category">질문</span>
+                  <span class="title">비행기에 눈에 넣는 렌즈통 들고 타도 돼요?</span>
+                  <span class="reply">2</span>
+                </a>
+                <p class="time">13:22</p>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="category">잡담</span>
+                  <span class="title">여행 출발 하루 남았는데 아직도 짐을 못챙겼어요ㅠㅠ 저같은 분들 없나요</span>
+                  <span class="reply">9</span>
+                </a>
+                <p class="time">13:17</p>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="category">질문</span>
+                  <span class="title">FF공항 입국심사 많이 까다롭나요?</span>
+                  <span class="reply">5</span>
+                </a>
+                <p class="time">13:15</p>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="category">실시간 정보</span>
+                  <span class="title">지금 JJ 입장 10분 뒤에 마감함!!</span>
+                  <span class="reply">7</span>
+                </a>
+                <p class="time">13:10</p>
+              </li>
+            </ul>
+          </div><!--.inner-->
+        </section><!--.talk-->
+
+        <section class="recommend">
+          <div class="inner">
+            <h4>MY PAGE 추천</h4>
+            <ul>
+              <li>
+                <div class="img_box">
+                  <a href="#"><img src="img/pf_01.jpg" alt="프로필이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <p class="name"><strong>황정식</strong>길따라 바람따라</p>
+                  <h5><a href="#">이렇게 된 이상 여행을 간다</a></h5>
+                  <ul>
+                    <li><a href="#">가을 단풍 구경</a></li>
+                    <li><a href="#">눈 오는 날의 삿포로</a></li>
+                    <li><a href="#">방콕보단 방콕이지</a></li>
+                  </ul>
+                </div><!--.txt_box-->
+              </li>
+              <li>
+                <div class="img_box">
+                  <a href="#"><img src="img/pf_02.jpg" alt="프로필이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <p class="name"><strong>애플</strong>맛있는 사과</p>
+                  <h5><a href="#">인생</a></h5>
+                  <ul>
+                    <li><a href="#">어디든 go</a></li>
+                    <li><a href="#">Try</a></li>
+                    <li><a href="#">호그와트를 가다</a></li>
+                  </ul>
+                </div><!--.txt_box-->
+              </li>
+              <li>
+                <div class="img_box">
+                  <a href="#"><img src="img/pf_03.jpg" alt="프로필이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <p class="name"><strong>도로록</strong>여행의 완성은 음식!</p>
+                  <h5><a href="#">오늘 뭐 먹지?</a></h5>
+                  <ul>
+                    <li><a href="#">두 그릇 주세요</a></li>
+                    <li><a href="#">애프터눈티 체험</a></li>
+                    <li><a href="#">야시장에서 먹은 것들</a></li>
+                  </ul>
+                </div><!--.txt_box-->
+              </li>
+              <li>
+                <div class="img_box">
+                  <a href="#"><img src="img/pf_04.jpg" alt="프로필이미지"></a>
+                </div><!--.img_box-->
+                <div class="txt_box">
+                  <p class="name"><strong>hzrt</strong>쉽지않아</p>
+                  <h5><a href="#">이게 삶이냐</a></h5>
+                  <ul>
+                    <li><a href="#">혼자서 부산1</a></li>
+                    <li><a href="#">혼자서 부산3</a></li>
+                    <li><a href="#">해외는 쉽지않아</a></li>
+                  </ul>
+                </div><!--.txt_box-->
+              </li>
+            </ul>
+          </div><!--.inner-->
+        </section><!--.recommend-->
+
+      </div><!-- #container -->
+
+
+      <footer>
+        <div class="inner">
+          <div class="f_logo">PAGE.</div>
+          <div class="app_down">
+            <a href="#" class="playstore">구글 플레이스토어 바로가기</a>
+            <a href="#" class="appstore">애플 앱스토어 바로가기</a>
+          </div><!--.app_down-->
+          <div class="f_info">
+            <ul class="f_info1">
+              <li><a href="#">서비스소개</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">청소년보호정책</a></li>
+            </ul>
+            <ul class="f_info2">
+              <li>대표 : 박마루</li>
+              <li>사업자 등록번호 : 106-22-00419</li>
+              <li>주소 : 부산광역시 부산진구</li>
+              <li>고객센터 : 1588-7777 (주말, 공휴일 휴무)</li>
+            </ul>
+          </div><!--.f_info-->
+          <span class="cop">ⓒPAGE</span>
+          <a href="#" class="go_top">TOP</a>
+        </div><!--.inner-->
+      </footer>
+    </form>
+  </div><!-- #wrap -->
+</body>
+</html>

@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+/* 공통으로 사용하는 css */
+
+.clear::after{content: ''; display: block; clear: both;}
+.hidden{font-size: 0; color: transparent;}
+
+body{font-size: 1.4rem;}
+#wrap{min-width: 320px;}
+
+
+/* 스와이퍼 css */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ==================== header ==================== */
+header{
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  z-index: 999;
+  background-color: #fff;
+}
+header h1 a{
+  display: block;
+  width: 152px;
+  height: 50px;
+  padding: 10px 0;
+  background: url(../img/logo.png) no-repeat center / auto 28px;
+  margin: 0 auto;
+}
+header .btnBox button{
+  width: 66px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.btnBox .btn_open{background-image: url(../img/btn_menu.png); left: 0; background-size: 26px auto;}
+.btnBox .btn_close{background-image: url(../img/btn_close.png); left: 0; background-size: 21px auto;}
+.btnBox .btn_login{background-image: url(../img/btn_my_tr.png); right: 0; background-size: auto 24px;}
+nav{
+  width: 100%;
+  position: absolute;
+  top: 50px; left: 0;
+  box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
+  display: none;
+}
+.navbg{
+  background-color: rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50px; left: 0;
+  display: none;
+}
+nav h2{display: none;}
+nav h3 a{
+  display: block;
+  padding: 5px 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #7fa7b8;
+  margin-bottom: 1px;
+}
+nav h3 a:last-child{margin-bottom: 0;}
+nav h3 a:hover{color: #f1485b;}
+nav ul.subMenu li{border-bottom: 1px solid #f7efed;}
+nav ul.subMenu li:last-child{border: 0;}
+nav ul.subMenu li a{
+  display: block;
+  padding: 5px 20px;
+  font-size: 1.6rem;
+  color: #555;
+  font-weight: 400;
+  background-color: #fff;
+}
+nav ul.subMenu li a::before{
+  content: '-';
+  display: inline-block;
+  margin-right: 5px;
+  color: #f1485b;
+}
+nav ul.subMenu li a:hover{background-color: #eee;}
+
+
+/* ================================================================= tablet 1024px */
+@media (min-width:1024px){
+  nav{width: 35%;}
+  nav h3 a{
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 2.2rem;
+  }
+  nav ul.subMenu li a{
+    padding: 10px;
+    padding-left: 45px;
+    font-size: 1.8rem;
+  }
+  .btnBox .btn_open{left: 20px;}
+  .btnBox .btn_close{left: 20px;}
+  .btnBox .btn_login{right: 20px;}
+
+}
+
+/* desktop 1280px */
+@media (min-width:1280px){
+  .inner{
+    width: 1192px;
+    margin: 0 auto;
+    position: relative;
+  }
+  header h1 a{margin: 0; padding: 0;}
+  .btn_close, .btn_open{display: none;}
+  .navbg{
+    height: 150px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.7);
+  }
+  nav{
+    display: block;
+    top: 12px; left: 50%;
+    transform: translateX(-50%);
+    box-shadow: none;
+  }
+  nav h3{margin-bottom: 11px;}
+  nav h3 a{
+    width: 150px;
+    font-size: 2rem;
+    color: #33546d;
+    background-color: #fff;
+    margin-right: 10px;
+    padding: 0 0 0 20px;
+  }
+  nav ul.mainMenu{display: flex;}
+  nav ul.subMenu{padding-top: 10px; padding-bottom: 50px; display: none;}
+  nav ul.subMenu li{border: 0;}
+  nav ul.subMenu li a{
+    padding: 5px 5px 5px 20px;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: #aaa;
+    font-weight: 300;
+  }
+  nav ul.subMenu li a:hover{
+    color: #fff; 
+    background-color: transparent;
+    font-weight: 400;
+  }
+  nav ul.subMenu li a::before{display: none;}
+
+}
+
+
+
+/* ==================== footer ==================== */
+footer{
+  margin-top: 50px;
+  background-color: #222;
+  padding: 25px 20px 20px;
+  position: relative;
+}
+footer .f_logo{
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+footer .app_down a{
+  display: inline-block;
+  width: 26px;
+  height: 28px;
+  font-size: 0;
+  color: transparent;
+  position: absolute;
+  top: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px auto;
+}
+.app_down a.playstore{
+  right: 56px;
+  background-image: url(../img/app_google.png);
+  margin-right: 5px;
+}
+.app_down a.appstore{
+  right: 20px;
+  background-image: url(../img/app_apple.png);
+}
+
+.f_info{margin-top: 20px;}
+.f_info .f_info1 li{display: inline-block;}
+.f_info .f_info1 li a{
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-right: 5px;
+  color: #fff;
+}
+.f_info .f_info2{
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 20px 0 30px;
+  line-height: 1.5;
+}
+footer span.cop{color: #fff;}
+
+footer a.go_top{
+  display: block;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px; right: 20px;
+  line-height: 50px;
+  font-weight: 400;
+  z-index: 10;
+}
+footer a.go_top:hover{
+  color: #222;
+  background-color: #fff;
+}
+
+/* tablet 1024px */
+@media (min-width:1024px){
+  footer{padding: 25px 0;}
+
+  footer .app_down{margin-bottom: 100px;}
+  footer .app_down a{position: static;}
+
+  .f_info .f_info1 li{display: block;}
+  .f_info .f_info1 li a{
+    display: inline-block;
+    margin-right: 0;
+    line-height: 1.3;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  .f_info{
+    position: absolute;
+    top: 46px; right: 100px;
+    display: flex;
+    margin-top: 0;
+  }
+  .f_info ul.f_info1{margin-right: 50px;}
+  .f_info .f_info2{margin: 0;}
+  .f_info .f_info2 li{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+}
+
+/* desktop 1280px */
+@media (min-width:1280px){
+  footer .app_down{margin-bottom: 120px;}
+
+  .f_info{top: 20px;}
+
+  footer a.go_top{
+    position: fixed;
+    color: #000;
+    border-color: #000;
+    background-color: #fff;
+    opacity: 0.5;
+  }
+  footer a.go_top:hover{opacity: 1;}
+}
+

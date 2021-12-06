@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page - 여행의 시작과 끝</title>
+  <link href="css/import.css" rel="stylesheet">
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id="wrap">
+    <form action="" method="">
+      <header>
+        <div class="inner">
+          <h1><a href="index.html" class="hidden">PAGE</a></h1>
+          <div class="btnBox">
+            <button type="button" class="btn_open hidden">메뉴열기</button>
+            <button type="button" class="btn_close hidden">메뉴닫기</button>
+            <button type="button" class="btn_login hidden">로그인</button>
+          </div><!--.btnBox-->
+          <div class="navbg"></div>
+          <nav>
+            <h2>메인 네비게이션</h2>
+            <ul class="mainMenu">
+              <li>
+                <h3><a href="sub_travel.html">여행기</a></h3>
+                <ul class="subMenu">
+                  <li><a href="#">추천 여행기</a></li>
+                  <li><a href="#">후기</a></li>
+                  <li><a href="#">일정표</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="#">둘러보기</a></h3>
+              </li>
+              <li>
+                <h3><a href="sub_mypage.html">MY PAGE</a></h3>
+                <ul class="subMenu">
+                  <li><a href="#">내 여행모음</a></li>
+                  <li><a href="#">일정표 관리</a></li>
+                  <li><a href="#">책갈피 목록</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="#">광장</a></h3>
+                <ul class="subMenu">
+                  <li><a href="sub_talk.html">Talk</a></li>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">Event</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div><!--.inner-->
+      </header>
+
+      <div id="container">
+        <section class="page_pf">
+          <div class="inner">
+            <div class="pf_wrap1">
+              <div class="pf_pic">
+                <div class="img_box">
+                  <img src="img/my_pf.jpg" alt="프로필 이미지">
+                </div><!--.img_box-->
+              </div><!--.pf_pic-->
+              <p class="user_name">밤밤</p>
+            </div>
+            <div class="pf_wrap2">
+              <div class="pf_info">
+                <h2>뚜벅이의 여행</h2>
+                <a href="sub_mypage.html" class="adr">(bambam922.page.com)</a>
+                <p class="intro">뚜벅이의 여행 기록<br>2017.04.06 ~ ing</p>
+              </div><!--.pf_info-->
+              <a href="#" class="bookmark">+ 책갈피</a>
+            </div>
+          </div><!--.inner-->
+        </section><!--.page_pf-->
+
+        <section class="story">
+          <div class="inner">
+            <div class="story_wrap">
+              <div class="write">
+                <a href="#">+ 새 여행 기록</a>
+              </div>
+              <div class="st01 s_box">
+                <a href="#">
+                  <img src="img/mypage01.jpg" alt="대표이미지">
+                  <div class="txt_box">
+                    <strong>후쿠오카</strong>
+                    <span>18.04.02 - 18.04.05</span>
+                  </div><!--.txt_box-->
+                </a>
+              </div><!--.st01 s_box-->
+              <div class="st02 s_box">
+                <a href="#">
+                  <img src="img/mypage02.jpg" alt="대표이미지">
+                  <div class="txt_box">
+                    <strong>오사카</strong>
+                    <span>18.03.12 - 18.03.16</span>
+                  </div><!--.txt_box-->
+                </a>
+              </div><!--.st02 s_box-->
+              <div class="st03 s_box">
+                <a href="#">
+                  <img src="img/mypage03.jpg" alt="대표이미지">
+                  <div class="txt_box">
+                    <strong>가오슝</strong>
+                    <span>18.03.03 - 18.03.10</span>
+                  </div><!--.txt_box-->
+                </a>
+              </div><!--.st03 s_box-->
+              <div class="st04 s_box">
+                <a href="#">
+                  <img src="img/mypage04.jpg" alt="대표이미지">
+                  <div class="txt_box">
+                    <strong>타이베이</strong>
+                    <span>18.02.08 - 18.02.12</span>
+                  </div><!--.txt_box-->
+                </a>
+              </div><!--.st04 s_box-->
+              <div class="st05 s_box">
+                <a href="#">
+                  <img src="img/mypage05.jpg" alt="대표이미지">
+                  <div class="txt_box">
+                    <strong>방콕</strong>
+                    <span>17.09.17 - 17.09.21</span>
+                  </div><!--.txt_box-->
+                </a>
+              </div><!--.st05-->
+            </div><!--.story_wrap-->
+            <a href="#" class="more">+ 더 보기</a>
+            <div class="sch_box">
+              <label for="sch_in_mypage">이야기 검색</label>
+              <input type="text" id="sch_in_mypage" placeholder="검색어를 입력하세요">
+              <button type="button" class="sch_btn hidden">검색</button>
+            </div><!--.sch_box-->
+          </div><!--.inner-->
+        </section><!--.story-->
+      </div><!-- #container-->
+
+      <footer>
+        <div class="inner">
+          <div class="f_logo">PAGE.</div>
+          <div class="app_down">
+            <a href="#" class="playstore">구글 플레이스토어 바로가기</a>
+            <a href="#" class="appstore">애플 앱스토어 바로가기</a>
+          </div><!--.app_down-->
+          <div class="f_info">
+            <ul class="f_info1">
+              <li><a href="#">서비스소개</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">청소년보호정책</a></li>
+            </ul>
+            <ul class="f_info2">
+              <li>대표 : 박마루</li>
+              <li>사업자 등록번호 : 106-22-00419</li>
+              <li>주소 : 부산광역시 부산진구</li>
+              <li>고객센터 : 1588-7777 (주말, 공휴일 휴무)</li>
+            </ul>
+          </div><!--.f_info-->
+          <span class="cop">ⓒPAGE</span>
+          <a href="#" class="go_top">TOP</a>
+        </div><!--.inner-->
+      </footer>
+    </form>
+  </div><!-- #wrap-->
+</body>
+</html>
