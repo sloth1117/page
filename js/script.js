@@ -66,9 +66,13 @@ $(document).ready(function(){
         spaceBetween: 20
       }
     },
-    navigation: {
-      nextEl: ".mySwiper_rv .swiper-button-next",
-      prevEl: ".mySwiper_rv .swiper-button-prev",
+    // navigation: {
+    //   nextEl: ".mySwiper_rv .swiper-button-next",
+    //   prevEl: ".mySwiper_rv .swiper-button-prev",
+    // },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: true,
     },
   });
 

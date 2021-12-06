@@ -217,10 +217,11 @@ section.week .week_big .img_box:hover::after{opacity: 0;}
   font-size: 1.6rem;
 }
 
-.r_box_wrap .swiper-button-next, .r_box_wrap .swiper-button-prev{
+/* .r_box_wrap .swiper-button-next, .r_box_wrap .swiper-button-prev{
   top: 42%;
   color: #7fa7b8;
-}
+} */
+.r_box_wrap .swiper-scrollbar-drag{background-color: #7fa7b873;}
 
 
 .travel{margin-bottom: 50px;}
