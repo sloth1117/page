@@ -19,3 +19,5 @@
   bottom: 35%; left: 50%;
   transform: translateX(-50%);
 }
+
+.review{display: none;}
