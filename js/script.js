@@ -100,6 +100,20 @@ $(document).ready(function(){
       },
     }
   });
+
+  // go_top
+  $(".go_top").click(function(){
+    $("html, body").animate({scrollTop:0},1000);
+  });
+
+  $(document).scroll(function(){
+    aa = $(document).scrollTop();
+    if(aa > 500) {
+      $(".go_top").fadeIn();
+    }else {
+      $(".go_top").fadeOut();
+    }
+  });
   
   
 }); // 끝

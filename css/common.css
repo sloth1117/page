@@ -299,6 +299,7 @@ footer a.go_top:hover{
     border-color: #000;
     background-color: #fff;
     opacity: 0.5;
+    display: none;
   }
   footer a.go_top:hover{opacity: 1;}
 }
