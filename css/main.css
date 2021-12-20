@@ -358,7 +358,7 @@ section.week .week_big .img_box:hover::after{opacity: 0;}
 .recommend .reList .img_box{
   width: 200px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 .recommend img{
   width: 100%;

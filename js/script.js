@@ -57,12 +57,12 @@ $(document).ready(function(){
       },
        // when window width is >= 900px
        900: {
-        slidesPerView: 3,
+        slidesPerView: 3.2,
         spaceBetween: 20
       },
       // when window width is >= 1200px
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 4.2,
         spaceBetween: 20
       }
     },

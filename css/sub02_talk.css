@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /* mobile 360px */
+.talk{margin-top: 50px;}
 .talk .cateset{padding: 0 20px;}
 .talk .cateset li{
 display: inline-block;
