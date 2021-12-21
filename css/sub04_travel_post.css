@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+header.postS{
+  position: static;
+}
+#container.postS{
+  padding-top: 0;
+}
+
+.postTit{
+  height: 500px;
+  background: url(../img/post_tit.jpg) no-repeat center / cover;
+  position: relative;
+}
+.postTit::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+.titBox{
+  position: relative;
+  z-index: 10;
+  padding: 370px 5% 0;
+  color: #fff;
+}
+.titBox .mainTit{
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 10px;
+}
+.titBox .traveldate{
+  font-weight: 300;
+  color: rgba(255,255,255,0.7);
+  font-size: 1.3rem;
+}
+.titBox .name span a{
+  color: #fff;
+  font-size: 1.6rem;
+}
+.titBox .name span{
+  border-bottom: 1px dotted #fff;
+}
+.titBox .name span:hover{
+  border: 0;
+}
+
+.tagBox{
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+.tagBox .posttag li{
+  display: inline-block;
+  margin-right: 5px;
+}
+.tagBox .posttag li a{
+  border: 2px solid #7fa7b8;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+.tagBox .posttag li a:hover{
+  background-color: #7fa7b84b;
+}
+
+.postCon{
+  margin: 50px 0;
+}
+.postCon .posting p{
+  font-size: 1.8rem;
+}
+
+.postFoot{
+  background-color: #f7efed;
+  padding: 0 20px 30px;
+  position: relative;
+}
+.pfBox{
+  position: relative;
+}
+.pfBox .img_box{
+  width: 100px;
+  height: 100px;
+  border: 5px solid #f7efed;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translateY(-25px);
+}
+.pfBox .img_box img{
+  width: 100%;
+}
+.pfBox .pfinfo{
+  position: absolute;
+  top: 15px; left: 120px;
+}
+.pfBox .pfinfo p.name{
+  font-size: 2rem;
+  font-weight: 400;
+  color: #7fa7b8;
+  margin-bottom: 10px;
+}
+.pfBox .pfinfo p.mypageInfo{
+  color: #777;
+  font-size: 1.6rem;
+}
+.postFoot .bookmark{
+  border: 1px solid #f1485b;
+  padding: 5px 10px;
+  color: #f1485b;
+  position: absolute;
+  top: 50%; right: 5%;
+  transform: translateY(-50%);
+}
+.postFoot .bookmark:hover{
+  background-color: #f1485b;
+  color: #fff;
+}
+
+.series{
+  padding: 20px;
+}
+.series .seriesTit{
+  font-size: 1.8rem;
+}
+.series .seriesTit span{
+  font-weight: 400;
+  color: #f1485b;
+}
+
+/* ================================================================= tablet 1024px */
+@media (min-width: 1024px){}
+/* ================================================================= desktop 1280px */
+@media (min-width: 1280px){}

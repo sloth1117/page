@@ -60,7 +60,7 @@
   color: #fff;
   font-weight: 400;
   max-width: 500px;
-  margin: 0 auto 30px;
+  /* margin: 0 auto 30px; */
   background: url(../img/mypage_new.jpg) no-repeat center / cover;
   opacity: 0.7;
   transition: all 0.3s;
@@ -167,16 +167,12 @@
   .story_wrap > div{
     flex-basis: 45%;
   }
-  .story_wrap > div.write{
-    flex-basis: 50%;
-    display: flex;
-  }
   .story_wrap .write a{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     font-size: 3rem;
-    line-height: 300px;
-    margin: 0 auto 30px;
+    margin: 0 auto;
+    padding-top: 25%;
   }
   .s_box .txt_box strong{
     font-size: 2.4rem;
@@ -205,17 +201,6 @@
   }
   .story_wrap > div{
     flex-basis: 30%;
-  }
-  .story_wrap > div.write{
-    flex-basis: 33%;
-    display: flex;
-  }
-  .story_wrap .write a{
-    width: 358px;
-    height: 258px;
-    line-height: 258px;
-    font-size: 3rem;
-    margin: 0 auto 30px;
   }
   .story_wrap .write a:hover{font-size: 3.5rem;}
   .s_box .txt_box strong{font-size: 2.2rem;}
