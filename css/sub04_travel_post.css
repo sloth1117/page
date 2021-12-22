@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-header.postS{
+/* header.postS{
   position: static;
 }
 #container.postS{
   padding-top: 0;
-}
+} */
 
 .postTit{
   height: 500px;
@@ -69,8 +69,16 @@ header.postS{
 .postCon{
   margin: 50px 0;
 }
-.postCon .posting p{
+.postCon .posting > p{
   font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.postCon .posting .poimg{
+  margin: 30px auto;
+  max-width: 500px;
+}
+.postCon .posting .poimg img{
+  width: 100%;
 }
 
 .postFoot{
@@ -101,6 +109,20 @@ header.postS{
   font-weight: 400;
   color: #7fa7b8;
   margin-bottom: 10px;
+}
+.pfBox .pfinfo p.name span{
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #999;
+  padding-left: 10px;
+  font-weight: 300;
+}
+.pfBox .pfinfo p.name span a{
+  font-size: 1.5rem;
+  border-bottom: 1px dotted #222;
+}
+.pfBox .pfinfo p.name span a:hover{
+  border: 0;
 }
 .pfBox .pfinfo p.mypageInfo{
   color: #777;
@@ -136,6 +158,10 @@ header.postS{
   overflow: hidden;
   width: 50%;
   margin: 0 auto 5px;
+  transition: all 0.3s;
+}
+.series .seriesCon li .img_box:hover{
+  opacity: 0.7;
 }
 .series .seriesCon li .img_box img{
   width: 100%;
@@ -168,14 +194,31 @@ header.postS{
 }
 /* ================================================================= tablet 1024px */
 @media (min-width: 1024px){
+  .titBox{
+    padding-left: 20px;
+  }
   .titBox .mainTit{
     font-size: 3.6rem;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   }
+  .titBox .traveldate{
+    font-size: 1.5rem;
+  }
+  .titBox .name span a{
+    font-size: 1.8rem;
+  }
+
+  .inner.inpad{
+    padding: 0 100px;
+  }
+  
 }
 /* ================================================================= desktop 1280px */
 @media (min-width: 1280px){
   .titBox .mainTit{
     font-size: 4rem;
+  }
+  .titBox .mainTit:hover{
+    color: #fff;
   }
 }
