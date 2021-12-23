@@ -130,10 +130,10 @@
 }
 .postFoot .bookmark{
   border: 1px solid #f1485b;
-  padding: 5px 10px;
+  padding: 0 10px;
   color: #f1485b;
   position: absolute;
-  top: 50%; right: 5%;
+  top: 50%; right: 5%; left: auto;
   transform: translateY(-50%);
 }
 .postFoot .bookmark:hover{

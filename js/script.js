@@ -114,6 +114,26 @@ $(document).ready(function(){
       $(".go_top").fadeOut();
     }
   });
+
+
+  //bookmark
+  $(".bmarkp").click(function(){
+    event.preventDefault();
+    $("#bmark").show();
+    $(".bmarkp").hide();
+    $(".bmarkm").show();
+  });
+  $(".bmark_confirm").click(function(){
+    $("#bmark").hide();
+  });
+
+  $(".bmarkm").click(function(){
+    event.preventDefault();
+    $("#bmark").show();
+    $(".bmarkCon p").text("책갈피가 해제되었습니다.");
+    $(".bmarkm").hide();
+    $(".bmarkp").show();
+  });
   
   
 }); // 끝
